@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Index Page</title>
+    <!-- [[ code: the link to your external CSS file ]] -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">JS-ASSIGNMENT2</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link" href="excel.html">Excel</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="container-fluid">
+
+            <form id="main-form" name="mainform">
+                <div class="row mb-3">
+                    <label for="first-name" class="col-sm-2 col-form-label">First Name:</label>
+                    <div class="col-sm-10"><input type="text" id="first-name"></div>
+                </div>
+                <div class="row mb-3">
+                    <label for="last-name" class="col-sm-2 col-form-label">Last Name:</label>
+                    <div class="col-sm-10"><input type="text" id="last-name"></div>
+                </div>
+                <div class="row mb-3">
+                    <label for="email-addr" class="col-sm-2 col-form-label">Email:</label>
+                    <div class="col-sm-10"><input type="email" id="email-addr"></div>
+                </div>
+                <div class="row mb-3">
+                    <label for="address" class="col-sm-2 col-form-label">Address:</label>
+                    <div class="col-sm-10"><input type="text" id="address"></div>
+                </div>
+                <div class="row mb-3">
+                    <label for="city" class="col-sm-2 col-form-label">City:</label>
+                    <div class="col-sm-10"><input type="text" id="city"></div>
+                </div>
+                <div class="row mb-3">
+                    <label for="province" class="col-sm-2 col-form-label">Province:</label>
+                    <div class="col-sm-10"><input type="text" id="province"></div>
+                </div>
+                <fieldset class="row mb-3" class="col-sm-2 col-form-label">
+                    <legend class="col-form-label col-sm-2 pt-0">Membership:</legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input type="radio" id="premium" name="membership" value="premium" checked>
+                            <label for="premium">Premium</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" id="standard" name="membership" value="standard">
+                            <label for="standard">Standard</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" id="basic" name="membership" value="basic">
+                            <label for="basic">Basic</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Submit" class="btn btn-outline-dark"">
+                <input type="reset" value="Reset" class="btn btn-outline-dark"">
+            </form>
+            <div id="output">
+                <p>Full Name: <span id="name-output"></span></p>
+                <p>Email: <span id="email-output"></span></p>
+                <p>Address: <span id="address-output"></span></p>
+                <p>Membership: <span id="membership-output"></span></p>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            Georgian @ ILAC - HTML, CSS, and JavaScript Assignment#2 - Liyuan Luo, Adedoyin, Shuhan Yang
+        </p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
